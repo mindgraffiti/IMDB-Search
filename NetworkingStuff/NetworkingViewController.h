@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface NetworkingViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *ipAddressLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+-(IBAction)search:(id)sender;
+
+
 @end

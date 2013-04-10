@@ -28,13 +28,15 @@
 {
     [super viewDidLoad];
     
-    NSURL *url = [NSURL URLWithString:@"http://o.onionstatic.com/images/7/7954/original/700.hq.jpg?3818"];
+    
+    
+    /*NSURL *url = [NSURL URLWithString:@"http://o.onionstatic.com/images/7/7954/original/700.hq.jpg?3818"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     // sending a message to our class, with 3 arguments.
     
     // a caret ^ is obj.-c.'s marker for a block.
-    /*AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         
         
         NSString *ipAddress = [JSON valueForKeyPath:@"origin"];
@@ -49,16 +51,28 @@
         [alert show];
         
         self.ipAddressLabel.text = error.localizedDescription;
-    }];*/
+    }];
     
     AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request success:^(UIImage *image)
     {
         self.imageView.image = image;
-    }];
+    }];*/
     
+    //[operation start];
+    
+    
+}
+- (IBAction)search:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://imdbapi.org/?type=json&title=war"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
+        NSLog(@"%@",JSON);
+    }failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
+        NSLog(@"Errors. %@", error);
+     }];
     [operation start];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

@@ -17,7 +17,6 @@
 		AF97D15A1714D4940039D955 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF97D1591714D4940039D955 /* Default@2x.png */; };
 		AF97D15C1714D4940039D955 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF97D15B1714D4940039D955 /* Default-568h@2x.png */; };
 		AF97D1651714D54F0039D955 /* NetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF97D1631714D54F0039D955 /* NetworkingViewController.m */; };
-		AF97D1661714D54F0039D955 /* NetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF97D1641714D54F0039D955 /* NetworkingViewController.xib */; };
 		AF97D17B1714D9320039D955 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF97D1691714D9320039D955 /* AFHTTPClient.m */; };
 		AF97D17C1714D9320039D955 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF97D16B1714D9320039D955 /* AFHTTPRequestOperation.m */; };
 		AF97D17D1714D9320039D955 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF97D16D1714D9320039D955 /* AFImageRequestOperation.m */; };
@@ -29,6 +28,7 @@
 		AF97D1831714D9320039D955 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AF97D17A1714D9320039D955 /* UIImageView+AFNetworking.m */; };
 		AF97D1851714DAB00039D955 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97D1841714DAB00039D955 /* SystemConfiguration.framework */; };
 		AF97D1871714DAC30039D955 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97D1861714DAC30039D955 /* MobileCoreServices.framework */; };
+		AF995E79171623AB000C705C /* NetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF995E78171623AB000C705C /* NetworkingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,6 @@
 		AF97D15B1714D4940039D955 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AF97D1621714D54F0039D955 /* NetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingViewController.h; sourceTree = "<group>"; };
 		AF97D1631714D54F0039D955 /* NetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingViewController.m; sourceTree = "<group>"; };
-		AF97D1641714D54F0039D955 /* NetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkingViewController.xib; sourceTree = "<group>"; };
 		AF97D1681714D9320039D955 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		AF97D1691714D9320039D955 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		AF97D16A1714D9320039D955 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		AF97D17A1714D9320039D955 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		AF97D1841714DAB00039D955 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AF97D1861714DAC30039D955 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AF995E78171623AB000C705C /* NetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 				AF97D1671714D9320039D955 /* AFNetworking */,
 				AF97D1541714D4940039D955 /* AppDelegate.h */,
 				AF97D1621714D54F0039D955 /* NetworkingViewController.h */,
+				AF995E78171623AB000C705C /* NetworkingViewController.xib */,
 				AF97D1631714D54F0039D955 /* NetworkingViewController.m */,
-				AF97D1641714D54F0039D955 /* NetworkingViewController.xib */,
 				AF97D1551714D4940039D955 /* AppDelegate.m */,
 				AF97D14C1714D4940039D955 /* Supporting Files */,
 			);
@@ -225,7 +225,7 @@
 				AF97D1581714D4940039D955 /* Default.png in Resources */,
 				AF97D15A1714D4940039D955 /* Default@2x.png in Resources */,
 				AF97D15C1714D4940039D955 /* Default-568h@2x.png in Resources */,
-				AF97D1661714D54F0039D955 /* NetworkingViewController.xib in Resources */,
+				AF995E79171623AB000C705C /* NetworkingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +364,7 @@
 				AF97D1611714D4940039D955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
