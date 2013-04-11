@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NetworkingViewController : UIViewController
+@interface NetworkingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong,nonatomic) NSArray *movies;
+@property (weak, nonatomic) IBOutlet UITableView *movieTable;
 
 -(IBAction)search:(id)sender;
 

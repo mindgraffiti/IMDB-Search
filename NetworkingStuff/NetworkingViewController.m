@@ -15,60 +15,31 @@
 
 @implementation NetworkingViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
+    // add this as another acceptable content type 
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
+    self.title = @"IMDB Search";
+}
+- (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.movies.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    
-    
-    /*NSURL *url = [NSURL URLWithString:@"http://o.onionstatic.com/images/7/7954/original/700.hq.jpg?3818"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    // sending a message to our class, with 3 arguments.
-    
-    // a caret ^ is obj.-c.'s marker for a block.
-    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        
-        
-        NSString *ipAddress = [JSON valueForKeyPath:@"origin"];
-        
-        self.ipAddressLabel.text = ipAddress;
-
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        // this happens when the web service call doesn't work.
-        NSLog(@"oops: %@", error);
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
-        [alert show];
-        
-        self.ipAddressLabel.text = error.localizedDescription;
-    }];
-    
-    AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request success:^(UIImage *image)
-    {
-        self.imageView.image = image;
-    }];*/
-    
-    //[operation start];
-    
-    
+    NSDictionary *movie = [self.movies objectAtIndex:indexPath.row];
+    cell.textLabel.text = [movie valueForKeyPath:@"title"];
+    return cell;
 }
 - (IBAction)search:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://imdbapi.org/?type=json&title=war"];
+    NSURL *url = [NSURL URLWithString:@"http://imdbapi.org/?type=json&title=war&limit=10"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
-        NSLog(@"%@",JSON);
+        self.movies = JSON;
+        
+        [self.movieTable reloadData];
+        //NSLog(@"%@", [JSON valueForKeyPath:@"title"]);
     }failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
         NSLog(@"Errors. %@", error);
      }];
@@ -78,7 +49,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
