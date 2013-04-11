@@ -31,13 +31,20 @@
     cell.textLabel.text = [movie valueForKeyPath:@"title"];
     return cell;
 }
+
 - (IBAction)search:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://imdbapi.org/?type=json&title=war&limit=10"];
+    // dismiss the keyboard view upon searching
+    [self.view endEditing:YES];
+    
+    NSString *searchURL = [NSString stringWithFormat:@"http://imdbapi.org/?type=json&title=%@&limit=10", self.searchField.text];
+    // encode special characters found in the searchURL.
+    NSString *encodedURL = [searchURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSURL *url = [NSURL URLWithString:encodedURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
         self.movies = JSON;
-        
         [self.movieTable reloadData];
         //NSLog(@"%@", [JSON valueForKeyPath:@"title"]);
     }failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){

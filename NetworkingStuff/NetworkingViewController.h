@@ -11,6 +11,7 @@
 @interface NetworkingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong,nonatomic) NSArray *movies;
 @property (weak, nonatomic) IBOutlet UITableView *movieTable;
+@property (weak, nonatomic) IBOutlet UITextField *searchField;
 
 -(IBAction)search:(id)sender;
 
