@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1A30001717727C00818554 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A2FFF1717727C00818554 /* MovieCell.m */; };
+		AF1A30021717746B00818554 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF1A30011717746B00818554 /* MovieCell.xib */; };
 		AF97D1461714D4940039D955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97D1451714D4940039D955 /* UIKit.framework */; };
 		AF97D1481714D4940039D955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97D1471714D4940039D955 /* Foundation.framework */; };
 		AF97D14A1714D4940039D955 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97D1491714D4940039D955 /* CoreGraphics.framework */; };
@@ -32,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1A2FFE1717727C00818554 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		AF1A2FFF1717727C00818554 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		AF1A30011717746B00818554 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		AF97D1421714D4940039D955 /* NetworkingStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF97D1451714D4940039D955 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF97D1471714D4940039D955 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 		AF97D14B1714D4940039D955 /* NetworkingStuff */ = {
 			isa = PBXGroup;
 			children = (
+				AF1A2FFE1717727C00818554 /* MovieCell.h */,
+				AF1A2FFF1717727C00818554 /* MovieCell.m */,
+				AF1A30011717746B00818554 /* MovieCell.xib */,
 				AF97D1671714D9320039D955 /* AFNetworking */,
 				AF97D1541714D4940039D955 /* AppDelegate.h */,
 				AF97D1621714D54F0039D955 /* NetworkingViewController.h */,
@@ -226,6 +234,7 @@
 				AF97D15A1714D4940039D955 /* Default@2x.png in Resources */,
 				AF97D15C1714D4940039D955 /* Default-568h@2x.png in Resources */,
 				AF995E79171623AB000C705C /* NetworkingViewController.xib in Resources */,
+				AF1A30021717746B00818554 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +257,7 @@
 				AF97D1811714D9320039D955 /* AFURLConnectionOperation.m in Sources */,
 				AF97D1821714D9320039D955 /* AFXMLRequestOperation.m in Sources */,
 				AF97D1831714D9320039D955 /* UIImageView+AFNetworking.m in Sources */,
+				AF1A30001717727C00818554 /* MovieCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
