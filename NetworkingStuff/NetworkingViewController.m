@@ -8,6 +8,7 @@
 
 #import "NetworkingViewController.h"
 #import "AFNetworking.h"
+#import "MovieCell.h"
 
 @interface NetworkingViewController ()
 
@@ -24,11 +25,35 @@
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.movies.count;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 95.0;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-    
+    UINib *nib = [UINib nibWithNibName:@"MovieCell" bundle:[NSBundle mainBundle]];
+    NSArray *array = [nib instantiateWithOwner:nil options:nil];
+    MovieCell *cell = [array lastObject];
     NSDictionary *movie = [self.movies objectAtIndex:indexPath.row];
-    cell.textLabel.text = [movie valueForKeyPath:@"title"];
+    
+    NSString *title = [movie valueForKey:@"title"];
+    id year = [movie valueForKey:@"year"];
+    
+    cell.titleLabel.text = title;
+    cell.yearLabel.text = [NSString stringWithFormat:@"%@", year];
+    
+    NSURL *posterURL = [NSURL URLWithString:[movie valueForKey:@"poster"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:posterURL];
+    NSLog(@"about to load image");
+                                    
+    
+    AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request success:^(UIImage *image){
+      cell.imageView.image = image;
+      NSLog(@"image loaded");
+    [cell layoutSubviews];
+  }];
+    [operation start];
+    
+    
     return cell;
 }
 
