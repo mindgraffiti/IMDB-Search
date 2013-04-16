@@ -21,6 +21,11 @@
     // add this as another acceptable content type 
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
     self.title = @"IMDB Search";
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(posterTapped:)];
+    tapRecognizer.numberOfTapsRequired = 2;
+    
+    [self.navigationController.navigationBar addGestureRecognizer:tapRecognizer];
 }
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.movies.count;
@@ -33,6 +38,17 @@
     UINib *nib = [UINib nibWithNibName:@"MovieCell" bundle:[NSBundle mainBundle]];
     NSArray *array = [nib instantiateWithOwner:nil options:nil];
     MovieCell *cell = [array lastObject];
+    
+    /* 
+     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(posterTapped:)];
+     tapRecognizer.numberOfTapsRequired = 2;
+     // assigning the gestureRecognizer to a particular UIImageView.
+     [cell.moviePoster addGestureRecognizer:tapRecognizer];
+     
+     cell.moviePoster.userInteractionEnabled = YES;
+     
+     */
+    
     NSDictionary *movie = [self.movies objectAtIndex:indexPath.row];
     
     NSString *title = [movie valueForKey:@"title"];
@@ -47,7 +63,7 @@
                                     
     
     AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request success:^(UIImage *image){
-      cell.imageView.image = image;
+      cell.moviePoster.image = image;
       NSLog(@"image loaded");
     [cell layoutSubviews];
   }];
@@ -55,6 +71,22 @@
     
     
     return cell;
+}
+
+// handler for the tap gesture
+-(void)posterTapped:(UITapGestureRecognizer *)gestureRecognizer
+{
+    NSLog(@"posterTapped!");
+    
+    // take the first cell in the row and animate the image.
+    MovieCell *firstCell = (MovieCell *)[self.movieTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    if (firstCell) {
+        [UIView animateWithDuration:0.5 animations:^{
+            firstCell.moviePoster.alpha = 0.0;
+            firstCell.moviePoster.transform = CGAffineTransformMakeRotation(M_PI);
+            //firstCell.moviePoster.transform = CGAffineTransformMakeRotation(45);
+        }];
+    }
 }
 
 - (IBAction)search:(id)sender
