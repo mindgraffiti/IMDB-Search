@@ -34,24 +34,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF1A2FFE1717727C00818554 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
-		AF1A2FFF1717727C00818554 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
-		AF1A30011717746B00818554 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		AF97D1421714D4940039D955 /* NetworkingStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1A2FFE1717727C00818554 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieCell.h; path = "../IMDB-Search/MovieCell.h"; sourceTree = "<group>"; };
+		AF1A2FFF1717727C00818554 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieCell.m; path = "../IMDB-Search/MovieCell.m"; sourceTree = "<group>"; };
+		AF1A30011717746B00818554 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieCell.xib; path = "../IMDB-Search/MovieCell.xib"; sourceTree = "<group>"; };
+		AF97D1421714D4940039D955 /* IMDB-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDB-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF97D1451714D4940039D955 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF97D1471714D4940039D955 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF97D1491714D4940039D955 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AF97D14D1714D4940039D955 /* NetworkingStuff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkingStuff-Info.plist"; sourceTree = "<group>"; };
+		AF97D14D1714D4940039D955 /* IMDB-Search-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IMDB-Search-Info.plist"; path = "../IMDB-Search/IMDB-Search-Info.plist"; sourceTree = "<group>"; };
 		AF97D14F1714D4940039D955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF97D1511714D4940039D955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF97D1531714D4940039D955 /* NetworkingStuff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkingStuff-Prefix.pch"; sourceTree = "<group>"; };
-		AF97D1541714D4940039D955 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AF97D1551714D4940039D955 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF97D1571714D4940039D955 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		AF97D1591714D4940039D955 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		AF97D15B1714D4940039D955 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AF97D1621714D54F0039D955 /* NetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingViewController.h; sourceTree = "<group>"; };
-		AF97D1631714D54F0039D955 /* NetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingViewController.m; sourceTree = "<group>"; };
+		AF97D1511714D4940039D955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../IMDB-Search/main.m"; sourceTree = "<group>"; };
+		AF97D1531714D4940039D955 /* IMDB-Search-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IMDB-Search-Prefix.pch"; path = "../IMDB-Search/IMDB-Search-Prefix.pch"; sourceTree = "<group>"; };
+		AF97D1541714D4940039D955 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../IMDB-Search/AppDelegate.h"; sourceTree = "<group>"; };
+		AF97D1551714D4940039D955 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../IMDB-Search/AppDelegate.m"; sourceTree = "<group>"; };
+		AF97D1571714D4940039D955 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../IMDB-Search/Default.png"; sourceTree = "<group>"; };
+		AF97D1591714D4940039D955 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../IMDB-Search/Default@2x.png"; sourceTree = "<group>"; };
+		AF97D15B1714D4940039D955 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../IMDB-Search/Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF97D1621714D54F0039D955 /* NetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkingViewController.h; path = "../IMDB-Search/NetworkingViewController.h"; sourceTree = "<group>"; };
+		AF97D1631714D54F0039D955 /* NetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkingViewController.m; path = "../IMDB-Search/NetworkingViewController.m"; sourceTree = "<group>"; };
 		AF97D1681714D9320039D955 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		AF97D1691714D9320039D955 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		AF97D16A1714D9320039D955 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		AF97D17A1714D9320039D955 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		AF97D1841714DAB00039D955 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AF97D1861714DAC30039D955 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		AF995E78171623AB000C705C /* NetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkingViewController.xib; sourceTree = "<group>"; };
+		AF995E78171623AB000C705C /* NetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NetworkingViewController.xib; path = "../IMDB-Search/NetworkingViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		AF97D1391714D4940039D955 = {
 			isa = PBXGroup;
 			children = (
-				AF97D14B1714D4940039D955 /* NetworkingStuff */,
+				AF97D14B1714D4940039D955 /* IMDB-Search */,
 				AF97D1441714D4940039D955 /* Frameworks */,
 				AF97D1431714D4940039D955 /* Products */,
 			);
@@ -104,7 +104,7 @@
 		AF97D1431714D4940039D955 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF97D1421714D4940039D955 /* NetworkingStuff.app */,
+				AF97D1421714D4940039D955 /* IMDB-Search.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AF97D14B1714D4940039D955 /* NetworkingStuff */ = {
+		AF97D14B1714D4940039D955 /* IMDB-Search */ = {
 			isa = PBXGroup;
 			children = (
 				AF1A2FFE1717727C00818554 /* MovieCell.h */,
@@ -135,16 +135,17 @@
 				AF97D1551714D4940039D955 /* AppDelegate.m */,
 				AF97D14C1714D4940039D955 /* Supporting Files */,
 			);
+			name = "IMDB-Search";
 			path = NetworkingStuff;
 			sourceTree = "<group>";
 		};
 		AF97D14C1714D4940039D955 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF97D14D1714D4940039D955 /* NetworkingStuff-Info.plist */,
+				AF97D14D1714D4940039D955 /* IMDB-Search-Info.plist */,
 				AF97D14E1714D4940039D955 /* InfoPlist.strings */,
 				AF97D1511714D4940039D955 /* main.m */,
-				AF97D1531714D4940039D955 /* NetworkingStuff-Prefix.pch */,
+				AF97D1531714D4940039D955 /* IMDB-Search-Prefix.pch */,
 				AF97D1571714D4940039D955 /* Default.png */,
 				AF97D1591714D4940039D955 /* Default@2x.png */,
 				AF97D15B1714D4940039D955 /* Default-568h@2x.png */,
@@ -175,15 +176,16 @@
 				AF97D1791714D9320039D955 /* UIImageView+AFNetworking.h */,
 				AF97D17A1714D9320039D955 /* UIImageView+AFNetworking.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = "../IMDB-Search/AFNetworking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF97D1411714D4940039D955 /* NetworkingStuff */ = {
+		AF97D1411714D4940039D955 /* IMDB-Search */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF97D15F1714D4940039D955 /* Build configuration list for PBXNativeTarget "NetworkingStuff" */;
+			buildConfigurationList = AF97D15F1714D4940039D955 /* Build configuration list for PBXNativeTarget "IMDB-Search" */;
 			buildPhases = (
 				AF97D13E1714D4940039D955 /* Sources */,
 				AF97D13F1714D4940039D955 /* Frameworks */,
@@ -193,9 +195,9 @@
 			);
 			dependencies = (
 			);
-			name = NetworkingStuff;
+			name = "IMDB-Search";
 			productName = NetworkingStuff;
-			productReference = AF97D1421714D4940039D955 /* NetworkingStuff.app */;
+			productReference = AF97D1421714D4940039D955 /* IMDB-Search.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +209,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Thuy Copeland";
 			};
-			buildConfigurationList = AF97D13D1714D4940039D955 /* Build configuration list for PBXProject "NetworkingStuff" */;
+			buildConfigurationList = AF97D13D1714D4940039D955 /* Build configuration list for PBXProject "IMDB-Search" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF97D1411714D4940039D955 /* NetworkingStuff */,
+				AF97D1411714D4940039D955 /* IMDB-Search */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +272,7 @@
 				AF97D14F1714D4940039D955 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = "../IMDB-Search";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,9 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkingStuff/NetworkingStuff-Prefix.pch";
-				INFOPLIST_FILE = "NetworkingStuff/NetworkingStuff-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NetworkingStuff/IMDB-Search-Prefix.pch";
+				INFOPLIST_FILE = "NetworkingStuff/IMDB-Search-Info.plist";
+				PRODUCT_NAME = "IMDB-Search";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -348,9 +351,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkingStuff/NetworkingStuff-Prefix.pch";
-				INFOPLIST_FILE = "NetworkingStuff/NetworkingStuff-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NetworkingStuff/IMDB-Search-Prefix.pch";
+				INFOPLIST_FILE = "NetworkingStuff/IMDB-Search-Info.plist";
+				PRODUCT_NAME = "IMDB-Search";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -358,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF97D13D1714D4940039D955 /* Build configuration list for PBXProject "NetworkingStuff" */ = {
+		AF97D13D1714D4940039D955 /* Build configuration list for PBXProject "IMDB-Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF97D15D1714D4940039D955 /* Debug */,
@@ -367,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF97D15F1714D4940039D955 /* Build configuration list for PBXNativeTarget "NetworkingStuff" */ = {
+		AF97D15F1714D4940039D955 /* Build configuration list for PBXNativeTarget "IMDB-Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF97D1601714D4940039D955 /* Debug */,
