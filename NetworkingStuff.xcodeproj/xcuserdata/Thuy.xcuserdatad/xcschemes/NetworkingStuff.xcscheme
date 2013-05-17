@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF97D1411714D4940039D955"
-               BuildableName = "IMDB-Search.app"
-               BlueprintName = "IMDB-Search"
-               ReferencedContainer = "container:IMDB-Search.xcodeproj">
+               BuildableName = "NetworkingStuff.app"
+               BlueprintName = "NetworkingStuff"
+               ReferencedContainer = "container:NetworkingStuff.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF97D1411714D4940039D955"
-            BuildableName = "IMDB-Search.app"
-            BlueprintName = "IMDB-Search"
-            ReferencedContainer = "container:IMDB-Search.xcodeproj">
+            BuildableName = "NetworkingStuff.app"
+            BlueprintName = "NetworkingStuff"
+            ReferencedContainer = "container:NetworkingStuff.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF97D1411714D4940039D955"
-            BuildableName = "IMDB-Search.app"
-            BlueprintName = "IMDB-Search"
-            ReferencedContainer = "container:IMDB-Search.xcodeproj">
+            BuildableName = "NetworkingStuff.app"
+            BlueprintName = "NetworkingStuff"
+            ReferencedContainer = "container:NetworkingStuff.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF97D1411714D4940039D955"
-            BuildableName = "IMDB-Search.app"
-            BlueprintName = "IMDB-Search"
-            ReferencedContainer = "container:IMDB-Search.xcodeproj">
+            BuildableName = "NetworkingStuff.app"
+            BlueprintName = "NetworkingStuff"
+            ReferencedContainer = "container:NetworkingStuff.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -98,8 +98,7 @@
     // encode special characters found in the searchURL.
     NSString *encodedURL = [searchURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
-    NSURL *url = [NSURL
-                  URLWithString:encodedURL];
+    NSURL *url = [NSURL URLWithString:encodedURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
         self.movies = JSON;
